@@ -1,13 +1,12 @@
 html, body {
 	margin: 0px;
 	padding: 0px;
-	top: 0px;
 	font-family: roboto;
 	font-weight: 300;
 }
 
 body {
-	background: #E3655B;
+	background: #03cea4;
 }
 
 div {
@@ -16,7 +15,7 @@ div {
 
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 300;
-	margin: 0px; 
+	margin: 12px 0;
 }
 
 h1 {
@@ -27,71 +26,49 @@ h1 {
 }
 
 a {
-	text-decoration: none;
-	color: #801734;
+	color: #3a3335;
 	font-weight: bold;
 }
 
 header {
 	background: rgba(255,255,255,0.35);
-	margin: 15px 0px;
-}
-
-#container {
-	max-width: 1200px;
-	width: 100%;
-	margin: auto;
+	margin: 18px 0px;
 }
 
 .block {
-	width: 100%;
-	padding: 25px;
-	float: left;
-	vertical-align: middle;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: flex-start;
+	margin-bottom: 18px;
+	padding: 24px;
 	background: rgba(255,255,255,0.35);
-	margin-bottom: 10px;
+}
+
+.block:first-of-type .text-box {
+	background: transparent;
 }
 
 .block img {
-	min-width: 300px;
-	width: 50%;
-	display: inline-block;
-	vertical-align: middle;
+	flex: 0 1 auto;
+	max-width: 100%;
 }
 
 #elin-img {
-	min-width: 350px;
-	width: 50%;
-	max-height: 300px;
-	float: left;
-}
-
-.half {
-	width: 50%;
-	float: left;
-	box-sizing: border-box;
-	padding: 0px 15px;
+	max-height: 400px;
 }
 
 .block .socmed {
-	width: 45px !important;
-	min-width: 45px;
-	float: right;
+	width: 45px;
 }
 
 .text-box {
-	display: inline-block;
-	width: 49%;
-	padding: 25px;
-	vertical-align: middle;
+	flex: 1 1 100%;
 }
 
-@media (max-width: 800px) {
-	.block img {
-		width: 100%
-	}
-
-	.text-box {
-		width: 100%;
-	}
+.text-box > * {
+	max-width: 800px;
+	width: 90%;
+	min-width: 320px;
+	margin: 18px auto;
 }
