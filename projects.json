@@ -1,7 +1,7 @@
 {"projects": [
 	{
 		"title": "PlaceNotes",
-		"desc": "PlaceNotes was a position based note-taking application for iOS. A note was tied to the place where it was made, and could then only be accessed from that place. Use cases might include making notes of yummy dishes at restaurants, keeping track of PRs at the gym, or taking notes at work that you don't want to be stressed about at home.",
+		"desc": "PlaceNotes was a position based note-taking application for iOS. A note was tied to the place where it was made, and could then only be accessed from that place. Use cases included making notes of yummy dishes at restaurants, keeping track of PRs at the gym, or taking notes at work that you don't want to be stressed about at home.",
 		"img_url": "imgs/placenotes.png",
 		"tags": "ios ux uni",
 		"project_date": "June 2015",
@@ -9,7 +9,7 @@
 	},
 	{
 		"title": "Saturn",
-		"desc": "Saturn was a game designed to broaden your taste in music. The game was based on a timeline, and guessing where on the timeline, or rather in which timespan, different songs belong. Answering correctly places the year on the timeline, and another time span is added, so the more correct answers, the trickier it gets to guess the next one.",
+		"desc": "Saturn was a game designed to broaden your taste in music. The game was based on a timeline, and guessing where on the timeline, or rather in which timespan, different songs belong. Answering correctly places the year on the timeline, and another time span is added, so the more correct answers, the trickier it gets to guess the next one. It was developed during the Diversify hackathon at Spotify in 2014.",
 		"img_url": "imgs/saturn.png",
 		"tags": "web frontend hackathon",
 		"project_date": "Dec 2014",
@@ -17,7 +17,7 @@
 	},
 	{
 		"title": "Ecomon",
-		"desc": "Ecomon was a service that uses gamification to get users to be more aware of their energy consumtion by rewarding points based on actions the user takes. During the project, a REST API was developed, along with a web app and an Android app that uses said API.",
+		"desc": "Ecomon was a service that used gamification to get users to be more aware of their energy consumtion by rewarding points based on actions the user takes. During the project, a REST API was developed, along with a web app and an Android app that used said API.",
 		"img_url": "imgs/ecomon.png",
 		"tags": "android web mean-stack uni",
 		"project_date": "Jan 2015",
@@ -25,7 +25,7 @@
 	},
 	{
 		"title": "Catastrophy",
-		"desc": "Catastrophy is a game made in Unity during a hackathon. You play as a ball of yarn, and your objective is to bounce away from a hungry kitten.",
+		"desc": "Catastrophy was a game made in Unity during a hackathon. You played as a ball of yarn, and your objective is to bounce away from a mischievous kitten.",
 		"img_url": "imgs/catastrophy.png",
 		"tags": "unity illustrator hackathon",
 		"project_date": "Nov 2014",
@@ -33,7 +33,7 @@
 	},
 	{
 		"title": "Lära",
-		"desc": "Lära is a business idea and concept for a crowdsourced knowledge platform, where anyone can create courses for others to take. Integrated in the platform would be a Pay-What-You-Want payment system, where users pay whatever they feel something is worth. A very simple web prototype was created for this concept.",
+		"desc": "Lära was a business idea and concept for a crowdsourced knowledge platform, where anyone could create courses for others to take. Integrated in the platform would be a Pay-What-You-Want payment system, where users pay whatever they feel something is worth. A very simple web prototype was created for this concept.",
 		"img_url": "imgs/lara.png",
 		"tags": "business-development web uni",
 		"project_date": "Jan 2015",
@@ -49,7 +49,7 @@
 	},
 	{
 		"title": "Artnet",
-		"desc": "Artnet is a prototype of an Android application designed to get more people interested in arts and culture. If the user is close to an artpiece or a museum, he or she gets a notification to check in and rate it in the app, and depending on what type of cultural genre it is, the user builds their cultural profile, gets profile based achievements, and shares their cultural journey with friends.",
+		"desc": "Artnet was a prototype of an Android application designed to get more people interested in arts and culture. If the user was close to an artpiece or a museum, they would get a notification to check in and rate it in the app, and depending on what type of cultural genre it is, the user built their cultural profile, got profile based achievements, and shared their cultural journey with friends.",
 		"img_url": "imgs/artnet.png",
 		"tags": "angular prototype android uni",
 		"project_date": "Oct 2014",
@@ -57,7 +57,7 @@
 	},
 	{
 		"title": "DateMe",
-		"desc": "DateMe is a dating service that allows users who are close enough to chat with eachother. During the project, a web REST API was developed, along with a web app, and an Android app that uses that API.",
+		"desc": "DateMe was a dating service that allows users who are close enough to chat with eachother. During the project, a web REST API was developed, along with a web app, and an Android app that uses that API.",
 		"img_url": "imgs/dateme.png",
 		"tags": "android web mean-stack uni",
 		"project_date": "Nov 2014",
@@ -65,7 +65,7 @@
 	},
 	{
 		"title": "Hashtagz",
-		"desc": "Hashtagz is a mashup app that uses the APIs for Instagram, 500px and Flickr to display images based on a search query for hashtags.",
+		"desc": "Hashtagz was a mashup app that used the APIs for Instagram, 500px and Flickr to display images based on a search query for hashtags.",
 		"img_url": "imgs/hashtagz.png",
 		"tags": "mean-stack mashup web uni",
 		"project_date": "June 2014",
@@ -73,7 +73,7 @@
 	},
 	{
 		"title": "Glass Emulator",
-		"desc": "A simple and web based emulator for Google Glass that allows the user to prototype cards on Glass.",
+		"desc": "A simple and web based emulator for Google Glass that allowed the user to prototype cards on Glass.",
 		"img_url": "imgs/glassemul.png",
 		"tags": "web angular uni",
 		"project_date": "April 2014",
@@ -81,7 +81,7 @@
 	},
 	{
 		"title": "Learn with (Google) Glass",
-		"desc": "A homework service that uses a web interface where teachers can create lessons and challenges with image, audio, video and text. These lessons are then sent to Glass, which the students use to solve the challenges.",
+		"desc": "An AR homework service that used a web interface where teachers could create lessons and challenges with image, audio, video and text. These lessons were then sent to Google Glass, which the students used to solve the challenges.",
 		"img_url": "imgs/gg.png",
 		"tags": "google-glass web uni",
 		"project_date": "May 2014",
@@ -89,7 +89,7 @@
 	},
 	{
 		"title": "SmartOffice",
-		"desc": "A smart and ubiquitous office environment, prototyped with scissors and cardboard. The concept includes face recognition for entering the office, a welcoming screen by the door that displays relevant information based on who's accessing it, automatic windows and lights in the conference room, etc.",
+		"desc": "A smart and ubiquitous office environment, prototyped with scissors and cardboard. The concept included face recognition for entering the office, a welcoming screen by the door that displays relevant information based on who's accessing it, automatic windows and lights in the conference room, etc.",
 		"img_url": "imgs/ubiq.png",
 		"tags": "ubicomp hardware web uni",
 		"project_date": "Dec 2013",
@@ -97,7 +97,7 @@
 	},
 	{
 		"title": "Jamspot",
-		"desc": "Jamspot was an application that used NFC tags to store, keep and display music, developed at the Unify hackathon at Spotify in 2015. The concept is to tag Spotify playlists to NFC tags on a map, to store memories from previous travels, for travel agencies to share some native tunes with potential travelers, etc.",
+		"desc": "Jamspot was an application that used NFC tags to store, keep and display music, developed during the Unify hackathon at Spotify in 2015. The concept was to tag Spotify playlists to NFC tags on a map, to store memories from previous travels, for travel agencies to share some native tunes with potential travelers, etc.",
 		"img_url": "imgs/jamspot.jpg",
 		"tags": "android spotify hackathon nfc",
 		"project_date": "May 2015",
@@ -105,7 +105,7 @@
 	},
 	{
 		"title": "Mini-CMS",
-		"desc": "A Mini-CMS that my previous website was built on, and which was limited to producing blog posts and project posts. These chould include images and tags, and had markdown for formatting the posts. Made with Ruby on Rails.",
+		"desc": "A Mini-CMS that a previous iteration of my website was built on, and was based on blog posts and project posts. These could include images and tags, and had markdown for formatting the posts. It was built with Ruby on Rails.",
 		"img_url": "imgs/blogtool.png",
 		"tags": "ruby-on-rails web uni",
 		"project_date": "March 2014",
