@@ -13,7 +13,7 @@
 		"img_url": "imgs/saturn.png",
 		"tags": "web frontend hackathon",
 		"project_date": "Dec 2014",
-		"url": "http://saturn.hejelin.se"
+		"url": null //"http://saturn.hejelin.se"
 	},
 	{
 		"title": "Ecomon",
@@ -29,7 +29,7 @@
 		"img_url": "imgs/catastrophy.png",
 		"tags": "unity illustrator hackathon",
 		"project_date": "Nov 2014",
-		"url": "http://static.hejelin.se/catastrophy/"
+		"url": null //"http://static.hejelin.se/catastrophy/"
 	},
 	{
 		"title": "Lära",
@@ -37,7 +37,7 @@
 		"img_url": "imgs/lara.png",
 		"tags": "business-development web uni",
 		"project_date": "Jan 2015",
-		"url": "http://static.hejelin.se/lära/"
+		"url": null //"http://static.hejelin.se/lära/"
 	},
 	{
 		"title": "Designing Mobile Permission Prompts",
@@ -53,7 +53,7 @@
 		"img_url": "imgs/artnet.png",
 		"tags": "angular prototype android uni",
 		"project_date": "Oct 2014",
-		"url": "http://artnet.hejelin.se/"
+		"url": null //"http://artnet.hejelin.se/"
 	},
 	{
 		"title": "DateMe",
@@ -69,7 +69,7 @@
 		"img_url": "imgs/hashtagz.png",
 		"tags": "mean-stack mashup web uni",
 		"project_date": "June 2014",
-		"url": "http://static.hejelin.se/hashtagz"
+		"url": null //"http://static.hejelin.se/hashtagz"
 	},
 	{
 		"title": "Glass Emulator",
@@ -77,7 +77,7 @@
 		"img_url": "imgs/glassemul.png",
 		"tags": "web angular uni",
 		"project_date": "April 2014",
-		"url": "http://glass.hejelin.se"
+		"url": null //"http://glass.hejelin.se"
 	},
 	{
 		"title": "Learn with (Google) Glass",
