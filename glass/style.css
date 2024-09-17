@@ -1,0 +1,17 @@
+body {
+	background: url(lov.jpg);
+	background-size: cover;
+	font-family: 'Roboto';
+}
+
+* {
+	box-sizing: border-box;
+}
+
+header#main-header {
+	width: 100%;
+	height: 50px;
+	padding: 15px;
+	background: #202020;
+	color: #fefefe;
+}
