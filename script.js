@@ -23,11 +23,29 @@ var byes = ["G'bye",
 			"May the force be with you",
 			"Bye",
 			"See ya",
-			"hejdåelin.se",
+			"Memento mori",
 			"Later"];
 
 window.onload = function() {
 	getProjects();
+
+	
+	console.log(`
+ ___            ___    ___                           ___  
+(   )     .-.  (   )  (   )                         (   ) 
+ | | .-. ( __)  | |_   | | .-.  .--. ___ .-.    .--. | |  
+ | |/   \\(''") (   __) | |/   \\/    (   )   \\  /    \\| |  
+ |  .-. . | |   | |    |  .-. |  .-. | ' .-. ;|  .-. | |  
+ | |  | | | |   | | ___| |  | |  | | |  / (___|  | | | |  
+ | |  | | | |   | |(   | |  | |  |/  | |      |  |/  | |  
+ | |  | | | |   | | | || |  | |  ' _.| |      |  ' _.| |  
+ | |  | | | |   | ' | || |  | |  .'.-| |      |  .'.-|_|  
+ | |  | | | |   ' \`-' ;| |  | '  \`-' | |      '  \`-' .-.  
+(___)(___(___)   \`.__.(___)(___\`.__.(___)      \`.__.(   ) 
+                                                     '-'  
+                                                          
+Did you wanna look at my code? Well, feel free! You might find some fun stuff 👀`);
+
 
 	document.getElementById("name").addEventListener(
 		"click", 
@@ -80,6 +98,10 @@ function getProjects() {
 
 function showSomeProjects(some) {
 	var count = some;
+
+	randomizeProjects()
+
+
 	for (var i = 0; i < count; i++) {
 		var node = getProjectEl(
 			projects[i].title, 
@@ -92,12 +114,13 @@ function showSomeProjects(some) {
 		projectsContainer.appendChild(node);
 	}
 
+	/**
 	var btn = document.createElement("BUTTON");
 	btn.innerHTML = "SHOW ALL";
 	btn.id = "project_btn";
 	btn.classList.add("action_btn");
 	btn.addEventListener('click', showAllProjects);
-	projectsContainer.appendChild(btn);
+	projectsContainer.appendChild(btn); */
 }
 
 function showAllProjects() {
@@ -116,6 +139,22 @@ function showAllProjects() {
 
 	var btn = document.getElementById('project_btn');
 	btn.parentNode.removeChild(btn);
+}
+
+function randomizeProjects() {
+	// copy-pasted from Stackoverflow (https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array)
+	let currentIndex = projects.length;
+
+	// While there remain elements to shuffle...
+	while (currentIndex != 0) {
+		// Pick a remaining element...
+		let randomIndex = Math.floor(Math.random() * currentIndex);
+		currentIndex--;
+
+		// And swap it with the current element.
+		[projects[currentIndex], projects[randomIndex]] = [
+			projects[randomIndex], projects[currentIndex]];
+	}
 }
 
 function getProjectEl(title, desc, img_url, tags, project_date, url) {
@@ -169,10 +208,13 @@ function getProjectEl(title, desc, img_url, tags, project_date, url) {
 }
 
 function slideIn() {
-	// here will be magic, promise 🤓
+	// when I was younger, I thought I'd make this look really cool. It's probably not gonna happen
 }
 
 function getJiggyWithIt() {
+	// Oh hi! Wondering what this one does? why don't you call
+	// getJiggyWithIt() in the dev console and find out? 👀
+
 	var elements = document.getElementsByTagName("*");
 	var count = elements.length;
 
@@ -188,6 +230,8 @@ function getJiggyWithIt() {
 }
 
 function stopGettingJiggyWithIt() {
+	// if you get bored of the above function, you can end it by calling this one
+
 	window.clearTimeout(jiggyID);
 }
 

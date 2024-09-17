@@ -1,7 +1,7 @@
 {"projects": [
 	{
 		"title": "PlaceNotes",
-		"desc": "PlaceNotes is a position based note-taking application for iOS. A note is tied to the place where it was made, and can then only be accessed from that place. Use cases might include making notes of yummy dishes at restaurants, keeping track of PRs at the gym, or taking notes at work that you don't want to be stressed about at home.",
+		"desc": "PlaceNotes was a position based note-taking application for iOS. A note was tied to the place where it was made, and could then only be accessed from that place. Use cases might include making notes of yummy dishes at restaurants, keeping track of PRs at the gym, or taking notes at work that you don't want to be stressed about at home.",
 		"img_url": "imgs/placenotes.png",
 		"tags": "ios ux uni",
 		"project_date": "June 2015",
@@ -9,7 +9,7 @@
 	},
 	{
 		"title": "Saturn",
-		"desc": "Saturn is a game designed to broaden your taste in music. The game is based on a timeline, and guessing where on the timeline, or rather in which timespan, different songs belong. Answering correctly places the year on the timeline, and another time span is added, so the more correct answers, the trickier it gets to guess the next one.",
+		"desc": "Saturn was a game designed to broaden your taste in music. The game was based on a timeline, and guessing where on the timeline, or rather in which timespan, different songs belong. Answering correctly places the year on the timeline, and another time span is added, so the more correct answers, the trickier it gets to guess the next one.",
 		"img_url": "imgs/saturn.png",
 		"tags": "web frontend hackathon",
 		"project_date": "Dec 2014",
@@ -17,7 +17,7 @@
 	},
 	{
 		"title": "Ecomon",
-		"desc": "Ecomon is a service that uses gamification to get users to be more aware of their energy consumtion by rewarding points based on actions the user takes. During the project, a REST API was developed, along with a web app and an Android app that uses said API.",
+		"desc": "Ecomon was a service that uses gamification to get users to be more aware of their energy consumtion by rewarding points based on actions the user takes. During the project, a REST API was developed, along with a web app and an Android app that uses said API.",
 		"img_url": "imgs/ecomon.png",
 		"tags": "android web mean-stack uni",
 		"project_date": "Jan 2015",
@@ -80,7 +80,7 @@
 		"url": "http://glass.hejelin.se"
 	},
 	{
-		"title": "Learn with Glass",
+		"title": "Learn with (Google) Glass",
 		"desc": "A homework service that uses a web interface where teachers can create lessons and challenges with image, audio, video and text. These lessons are then sent to Glass, which the students use to solve the challenges.",
 		"img_url": "imgs/gg.png",
 		"tags": "google-glass web uni",
@@ -93,11 +93,11 @@
 		"img_url": "imgs/ubiq.png",
 		"tags": "ubicomp hardware web uni",
 		"project_date": "Dec 2013",
-		"url": "http://static.hejelin.se/ubiq"
+		"url": "https://www.youtube.com/watch?v=TG1dXr-eP5U"
 	},
 	{
 		"title": "Jamspot",
-		"desc": "Jamspot is an application that uses NFC tags to store, keep and display music. The concept is to tag Spotify playlists to NFC tags on a map, to store memories from previous travels, for travel agencies to share some native tunes with potential travelers, etc.",
+		"desc": "Jamspot was an application that used NFC tags to store, keep and display music, developed at the Unify hackathon at Spotify in 2015. The concept is to tag Spotify playlists to NFC tags on a map, to store memories from previous travels, for travel agencies to share some native tunes with potential travelers, etc.",
 		"img_url": "imgs/jamspot.jpg",
 		"tags": "android spotify hackathon nfc",
 		"project_date": "May 2015",
@@ -110,13 +110,5 @@
 		"tags": "ruby-on-rails web uni",
 		"project_date": "March 2014",
 		"url": null
-	},
-	{
-		"title": "Bollnas.se",
-		"desc": "During a summer job I got the opportunity to redesign the official website for the municipality of Bollnäs, my howntown.",
-		"img_url": "imgs/bollnas.png",
-		"tags": "web",
-		"project_date": "Aug 2013",
-		"url": "http://bollnas.se"
 	}
 ]}

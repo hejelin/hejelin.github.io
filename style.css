@@ -5,11 +5,11 @@ html, body {
 }
 
 body {
-	background: #95969D;
+	background: #c3e3d5;
 }
 
 ::selection {
-	background: rgba(36,35,49,0.4);
+	background: rgba(115,147,133,0.4);
 }
 
 div, 
@@ -91,6 +91,7 @@ footer {
   float: right;
 	text-transform: uppercase;
 	transition: all 100ms ease-in;
+  cursor: pointer;
 }
 
 .action_btn:hover {
@@ -108,7 +109,8 @@ footer {
 }
 
 .proj,
-.about {
+.about,
+.talk {
 	max-width: 1160px;
 	width: 100%;
 	margin: 48px auto;
@@ -194,14 +196,16 @@ footer {
   display: none;
 }
 
-.resume {
+.resume,
+.talks {
 	margin: auto;
 	display: flex;
 	flex-flow: wrap;
 	justify-content: center;
 }
 
-.exp {
+.exp,
+.talk {
 	flex: 1 1 260px;
 	background: #F5F1ED;
 	margin: 24px;
@@ -210,6 +214,10 @@ footer {
 	border-radius: 2px;
 	box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px 
 			rgba(0, 0, 0, 0.12);
+}
+
+.talk {
+  flex: 1 1 360px;
 }
 
 .exp_logo img,
@@ -248,7 +256,11 @@ footer {
 }
 
 @media (max-width: 1020px) {
-	.about_img {
+	.talk {
+    flex: 1 1 310px;
+  }
+
+  .about_img {
     width: 45%;
     margin: 24px 24px 0;
 	}
@@ -273,7 +285,8 @@ footer {
 		padding: 24px;
 	}
 
-	.exp {
+	.exp, 
+  .talk {
     margin: 8px;
 	}
 
@@ -328,7 +341,8 @@ footer {
   }
 
   .proj,
-  .about {
+  .about,
+  .talk {
     margin: 12px auto;
   }
 }
