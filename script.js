@@ -1,8 +1,10 @@
 'use strict';
 
 var projects;
-var initialProjCount = 3;
+var initialProjCount = 4;
 var projectsContainer;
+var seenProjects = new Set();
+var shuffleButton;
 
 var jiggyID;
 
@@ -21,15 +23,12 @@ var byes = ["G'bye",
 			"Hare gött häj",
 			"Live long and prosper",
 			"May the force be with you",
-			"Bye",
-			"See ya",
+			"Bye 👋",
+			"See ya 👋",
 			"Memento mori",
 			"Later"];
 
 window.onload = function() {
-	getProjects();
-
-	
 	console.log(`
  ___            ___    ___                           ___  
 (   )     .-.  (   )  (   )                         (   ) 
@@ -46,14 +45,6 @@ window.onload = function() {
                                                           
 Did you wanna look at my code? Well, feel free! You might find some fun stuff 👀`);
 
-
-	document.getElementById("name").addEventListener(
-		"click", 
-		function() {
-			var cont = this.innerHTML;
-			this.innerHTML = cont;
-		});
-
 	innerHeight = window.innerHeight;
 	offsetTop = window.scrollY;
 
@@ -67,12 +58,19 @@ Did you wanna look at my code? Well, feel free! You might find some fun stuff �
 	slideElements = Array.prototype.slice.call(document.querySelectorAll(".slide"));
 	slideIn();
 
-	projectsContainer = document.querySelector("section#projects");
+	projectsContainer = document.querySelector("#projects");
+	shuffleButton = document.querySelector("#shuffle_projects");
+	shuffleButton.addEventListener("click", function() {
+		showSomeProjects(initialProjCount);
+	});
+
 	var placeholder = projectsContainer.querySelector(".placeholder_proj");
 	placeholder.style.height = 0;
 	placeholder.addEventListener("transitionend", function() {
 		projectsContainer.removeChild(placeholder);
 	});
+
+	getProjects();
 }
 
 window.onscroll = function() {
@@ -92,58 +90,49 @@ function getProjects() {
 			var data = JSON.parse(request.responseText);
 			projects = data.projects;
 			showSomeProjects(initialProjCount);
+			shuffleButton.disabled = projects.length <= initialProjCount;
 		}
 	}
 }
 
 function showSomeProjects(some) {
-	var count = some;
-
-	randomizeProjects()
-
-
-	for (var i = 0; i < count; i++) {
-		var node = getProjectEl(
-			projects[i].title, 
-			projects[i].desc, 
-			projects[i].img_url, 
-			projects[i].tags, 
-			projects[i].project_date,
-			projects[i].url);
-
-		projectsContainer.appendChild(node);
+	var unseenProjects = projects.filter(function(project) {
+		return !seenProjects.has(project.title);
+	});
+	var startingNewRound = unseenProjects.length === 0;
+	if (startingNewRound) {
+		seenProjects.clear();
+		unseenProjects = projects.slice();
 	}
 
-	/**
-	var btn = document.createElement("BUTTON");
-	btn.innerHTML = "SHOW ALL";
-	btn.id = "project_btn";
-	btn.classList.add("action_btn");
-	btn.addEventListener('click', showAllProjects);
-	projectsContainer.appendChild(btn); */
-}
+	randomizeProjects(unseenProjects);
+	var selectedProjects = unseenProjects.slice(0, some);
+	projectsContainer.querySelectorAll(".proj").forEach(function(projectEl) {
+		projectEl.remove();
+	});
 
-function showAllProjects() {
-	var count = projects.length;
-	for (var i = initialProjCount; i < count; i++) {
+	selectedProjects.forEach(function(project) {
+		seenProjects.add(project.title);
 		var node = getProjectEl(
-			projects[i].title, 
-			projects[i].desc, 
-			projects[i].img_url, 
-			projects[i].tags, 
-			projects[i].project_date,
-			projects[i].url);
-
+			project.title,
+			project.desc,
+			project.img_url,
+			project.tags,
+			project.project_date,
+			project.url);
 		projectsContainer.appendChild(node);
-	}
+	});
 
-	var btn = document.getElementById('project_btn');
-	btn.parentNode.removeChild(btn);
+	var remainingCount = projects.length - seenProjects.size;
+
+	shuffleButton.innerHTML = remainingCount
+		? 'Show me something else <span aria-hidden="true">↻</span>'
+		: 'Show me again <span aria-hidden="true">↻</span>';
 }
 
-function randomizeProjects() {
+function randomizeProjects(items) {
 	// copy-pasted from Stackoverflow (https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array)
-	let currentIndex = projects.length;
+	let currentIndex = items.length;
 
 	// While there remain elements to shuffle...
 	while (currentIndex != 0) {
@@ -152,8 +141,8 @@ function randomizeProjects() {
 		currentIndex--;
 
 		// And swap it with the current element.
-		[projects[currentIndex], projects[randomIndex]] = [
-			projects[randomIndex], projects[currentIndex]];
+		[items[currentIndex], items[randomIndex]] = [
+			items[randomIndex], items[currentIndex]];
 	}
 }
 
@@ -208,7 +197,7 @@ function getProjectEl(title, desc, img_url, tags, project_date, url) {
 }
 
 function slideIn() {
-	// when I was younger, I thought I'd make this look really cool. It's probably not gonna happen
+	// when I was a young whippersnapper, I thought I'd make this look really cool. It's probably not gonna happen
 }
 
 function getJiggyWithIt() {
@@ -234,4 +223,3 @@ function stopGettingJiggyWithIt() {
 
 	window.clearTimeout(jiggyID);
 }
-

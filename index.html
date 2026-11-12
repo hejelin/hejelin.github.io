@@ -1,154 +1,400 @@
 <!doctype html>
-<html>
+<html lang="sv,en">
 <head>
 	<meta charset="utf-8">
- 
- 	<title>Hej Elin | Portfolio</title>
-
-	<link rel="stylesheet" href="style.css" type="text/css">
-	<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet" type="text/css">
-	<script type="text/javascript" src="script.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#f6f5f0">
+	<meta name="description" content="Elin Nilsson is a technology researcher and engineer exploring the intersection of software, design, product and people.">
+	<title>Hej Elin | my home in cyberspace</title>
 	<link rel="icon" href="imgs/favicon.svg">
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
 </head>
 
 <body>
-<header>
-	<div id="name">
-	  <div id="e" class="letter">
-	    <div class="segment"></div>
-	    <div class="segment"></div>
-	    <div class="segment"></div>
-	    <div class="segment"></div>
-	  </div>
-	  <div id="l" class="letter">
-	    <div class="segment"></div>
-	    <div class="segment"></div>
-	  </div>
-	  <div id="i" class="letter">
-	    <div class="segment"></div>
-	  </div>
-	  <div id="n" class="letter">
-	    <div class="segment"></div>
-	    <div class="segment"></div>
-	    <div class="segment"></div>
-	  </div>
-	</div>
-	<h2>UX Engineer in Sweden</h2>
-	<div class="icon_container">
-		<a href="http://twitter.com/hejelinnilsson" target="_blank"><img src="imgs/twitter-g.svg" alt="twitter" /></a>
-		<a href="http://github.com/hejelin" target="_blank"><img src="imgs/github-g.svg" alt="github" /></a>
-		<a href="http://linkedin.com/in/hejelin" target="_blank"><img src="imgs/linkedin-g.svg"alt="linkedin" /></a>
-		<a href="mailto:elin.nilsson30@gmail.com"><img src="imgs/mail-g.svg" alt="email" /></a>
-	</div>
-</header>
+	<a class="skip_link" href="#main">Skip to content</a>
+	<header class="site_header">
+		<a class="wordmark" href="#top" aria-label="Elin Nilsson, home">HE</a>
+		<nav class="site_nav" aria-label="Main navigation">
+			<a href="#about">About</a>
+			<a href="#services">Work with me</a>
+			<a href="#experience">Experience</a>
+			<a href="#toolbox">Toolbox</a>
+			<a href="#writing">Writing and speaking</a>
+		</nav>
+		<a class="header_contact" href="mailto:elin@hejelin.com">Say hello <span aria-hidden="true">↗</span></a>
+	</header>
 
-<section>
-	<div class="about slide">
-		<img src="imgs/elinunicorn.jpg" alt="elin" class="about_img" />
-		<h2 class="about_title">Hej, I'm Elin!</h2>
-		<p class="about_txt">
-			I'm an enthusiastic engineer who enjoys the intersection between tech, design, product, organisational leadership, strategy and society. I'm a tech industry researcher at <a href="https://newsletter.pragmaticengineer.com/s/deepdives" target="_blank">The Pragmatic Engineer</a>, an alumni of the M.Sc program in <a href="http://interaktion.nu/" target="_blank">Interaction Technology and Design</a> and of Spotify. I'm inactive on most places as @hejelin or @hejelinnilsson. I've got <a href="https://linktr.ee/hejelin" target="_blank">a linktree</a>, a <a href="https://www.instagram.com/mya.the.van/" target="_blank">small adventure van</a>, and I have, at times, written things on <a href="http://medium.com/@hejelin" target="_blank">Medium</a>.
-		</p>
-		<h3 class="about_title">Talk to me about...</h3>
-		<p class="about_txt">
-			technical product management, improving developer experience and platform engineering, developing (mobile) design systems or server-driven features, tech leadership and staff/+ engineering, or speaking engagements.
-		</p>
-	</div>
-</section>
-
-<section>
-	<h1 class="section_head">Talks</h1>
-	<div class="talks">
-		<div class="talk">
-			<a href="https://www.youtube.com/watch?v=D7Cr50Mom4M" target="_blank"><img src="imgs/feedback.jpg"></a>
-			<h2 class="talk_title">Tell me about it!</h2>
-			<h3 class="conf_title"><a href="https://www.youtube.com/watch?v=D7Cr50Mom4M" target="_blank">Droidcon London 2022</a></h3>
-			<p class="talk_desc">I love feedback, and in this talk I presented my feedback formula (based on textbook definitions of feedback), talk about how to get better at giving and asking for feedback, and also <i>what to do</i> with the feedback you do get. The talk is 38 mins long. Feedback.</p>
-		</div>
-		<div class="talk">
-			<a href="https://www.youtube.com/watch?v=cTx8oHHew90" target="_blank"><img src="imgs/leaddev.jpg"></a>
-			<h2 class="talk_title">Breaking the (developer) silos</h2>
-			<h3 class="conf_title"><a href="https://leaddev.com/process/breaking-down-silos-better-collaboration" target="_blank">LeadDev Berlin 2019</a></h3>
-			<p class="talk_desc">Me and my teammate <a href="https://se.linkedin.com/in/raulherbster" target="_blank">Raul Herbster</a> talked about our experience working on a new experimentation platform for Spotify, and shared learning and gotchas from collaborating across platforms team (backend, mobile, web and data). The talk is 10 mins long.</p>
-		</div>
-		<div class="talk">
-			<a href="https://www.youtube.com/watch?v=BPJ6PVSe0N8" target="_blank"><img src="imgs/hubs.jpg"></a>
-			<h2 class="talk_title">The silver bullet that wasn't - the story of Hubs</h2>
-			<h3 class="conf_title"><a href="https://www.youtube.com/watch?v=BPJ6PVSe0N8" target="_blank">Droidcon Berlin 2019</a></h3>
-			<p class="talk_desc">The Hub Framework was a JSON-based Backend-driven UI framework developed at Spotify, and was at one point hailed as <i>The One Framework to Solve Everything</i>. Spoiler alert - It didn't. It's a cautionary tale of what can go wrong when building cross-platform systems without close collaboration, ignoring separation of concerns, and trying to solve too many problems at once. The talk is 39 mins long.</p>
-		</div>
-		<div class="talk">
-			<a href="https://www.youtube.com/watch?v=opsiSaUS2bg" target="_blank"><img src="imgs/modularization.jpg"></a>
-			<h2 class="talk_title">Modularization - how hard can it be?</h2>
-			<h3 class="conf_title"><a href="https://www.youtube.com/watch?v=opsiSaUS2bg" target="_blank">Droidcon Berlin 2018</a>, Droidcon London 2018, <a href="https://www.youtube.com/watch?v=K65M6jpyN4Y" target="_blank">JFokus 2019</a></h3>
-			<p class="talk_desc">In 2017, we modularized the Android codebase at Spotify, going from a monolithic .app module to hundreds of modules in a matter of months - a huge project that involved 50+ teams and 100+ mobile engineers. I talked about that journey, and what we learned about modularization, best practices, tech debt and perseverence along the way. The <a href="https://www.youtube.com/watch?v=K65M6jpyN4Y" target="_blank">JFokus</a> talk is less Android-specific than the Droidcon Berlin one. The talk is 33 mins long.</p>
-		</div>
-	</div>
-</section>
-
-<section>
-	<h1 class="section_head">Experience</h1>
-	<div class="resume">
-		<div class="exp slide">
-			<div class="exp_logo">
-				<img src="imgs/prageng.png" alt="Teal logo for the Pragmatic Engineer" />
+	<main id="main">
+		<section class="hero" id="top" aria-labelledby="hero_title">
+			<div class="hero_copy">
+				<p class="eyebrow">Tech researcher &amp; engineer · Östersund, Sweden</p>
+				<h1 id="hero_title">👋 Hej, I'm Elin</h1>
+				<p class="hero_intro">I'm an enthusiastic engineer drawn to the intersections of tech, design, product, organisational leadership, strategy and society. I've been an android developer, senior engineer, tech lead, tech industry researcher and incapable of staying away from improving things around me.</p>
+				<div class="hero_actions">
+					<a class="button button_primary" href="#services">Work with me<span aria-hidden="true">↓</span></a>
+				</div>
+				<div class="hero_note">
+					<p><span>Currently curious about</span> How to make sense of the impact tech is having on the world right now</p>
+					<p><span>Currently working on</span> <a href="https://hejelin.substack.com/s/the-burnout-diaries" target="_blank" rel="noopener noreferrer">The Burnout Diaries</a>.</p>
+				</div>
 			</div>
-			<h2 class="exp_title">Tech Industry Researcher at The Pragmatic Engineer</h2>
-			<h3 class="exp_detail">2024</h3>
-			<p class="exp_desc">Doing research, surveys and reports that are turned into <a href="https://newsletter.pragmaticengineer.com/s/deepdives" target="_blank">Deepdive articles</a> for The Pragmatic Engineer - the #1 technology newsletter on Substack</p>
-		</div>
-		<div class="exp slide">
-			<div class="exp_logo">
-				<img src="imgs/spotify.png" alt="Spotify logo" />
+			<div class="hero_visual">
+				<img src="imgs/elinunicorn.jpg" alt="Elin, in a unicorn hat" fetchpriority="high">
+				<div class="photo_note"><span aria-hidden="true">✳</span> A little bit serious. A little bit silly.</div>
 			</div>
-			<h2 class="exp_title">Senior Engineer | Tech Lead</h2>
-			<h3 class="exp_detail">2016-2023, Stockholm, Sweden</h3>
-			<p class="exp_desc">Worked with mobile architecture, frameworks, platforms and design systems for feature development in various teams at Spotify.</p>
-		</div>
-		<div class="exp slide">
-			<div class="exp_logo">
-				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Слой_1" x="0px" y="0px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
-					<g>
-						<defs>
-							<path id="SVGID_1_" d="M44.5,20H42h-8.2H24v8.5h11.8C34.7,33.9,30.1,37,24,37c-7.2,0-13-5.8-13-13s5.8-13,13-13    c3.1,0,5.9,1.1,8.1,2.9l6.4-6.4C34.6,4.1,29.6,2,24,2C11.8,2,2,11.8,2,24s9.8,22,22,22c11,0,21-8,21-22C45,22.7,44.8,21.3,44.5,20    z"/>
-						</defs>
-						<clipPath id="SVGID_2_">
-							<use xlink:href="#SVGID_1_" overflow="visible"/>
-						</clipPath>
-						<polygon clip-path="url(#SVGID_2_)" fill="#FBBC05" points="0,37 0,11 17,24  "/>
-						<polygon clip-path="url(#SVGID_2_)" fill="#EA4335" points="0,11 17,24 24,17.9 48,14 48,0 0,0  "/>
-						<polygon clip-path="url(#SVGID_2_)" fill="#34A853" points="0,37 30,14 37.9,15 48,0 48,48 0,48  "/>
-						<polygon clip-path="url(#SVGID_2_)" fill="#4285F4" points="48,48 17,24 13,21 48,11  "/>
-					</g>
-				</svg>
+		</section>
+
+		<section class="section_shell" id="about" aria-labelledby="about_title">
+			<div class="section_kicker">A little bit about me</div>
+			<div class="section_heading">
+				<h2 class="about_title">I like the <em>messy middle</em> between technology and everything else.</h2>
+				<p>I'm an enthusiastic engineer who enjoys the intersection between tech, design, product, organisational leadership, strategy and society. I'm a tech industry researcher at <a href="https://newsletter.pragmaticengineer.com/s/deepdives" target="_blank" rel="noopener noreferrer">The Pragmatic Engineer</a>, an alumni of the M.Sc program in <a href="http://interaktion.nu/" target="_blank" rel="noopener noreferrer">Interaction Technology and Design</a> and of Spotify. I'm inactive on most places as @hejelin or @hejelinnilsson. I've got <a href="https://linktr.ee/hejelin" target="_blank" rel="noopener noreferrer">a linktree</a>, a <a href="https://www.instagram.com/mya.the.van/" target="_blank" rel="noopener noreferrer">small adventure van</a>, and I have, at times, written things on <a href="http://medium.com/@hejelin" target="_blank" rel="noopener noreferrer">Medium</a>.</p>
 			</div>
-			<h2 class="exp_title">UX design intern</h2>
-			<h3 class="exp_detail">2015, London, United Kingdom</h3>
-			<p class="exp_desc">Worked with UX prototyping on the Google Cultural Institute <a href="https://artsandculture.google.com" target="_blank">web app</a> in London in the fall of 2015. The <a href="https://artsandculture.google.com/entity/0098/m03yhk?categoryId=medium" target="_blank">Entity Pages</a> are still rolling some of my CSS 👀</p>
+			<div class="process_heading">
+				<div class="section_kicker">How I tend to work</div>
+				<p>This is how I approach almost everything I do, be that design, development, team process, strategy, carpentry or figuring out life.</p>
+			</div>
+			<div class="process_section">
+				<details class="process_stage">
+					<summary>
+						<span class="process_icon" aria-hidden="true">🕵️</span>
+						<span class="process_summary">
+							<span class="process_title">Analysis &amp; understanding</span>
+							<span class="process_description">Understanding how things, systems and people work and interact, and how they ended up that way is my favourite place to start, because otherwise it's so much harder to figure out how to change and improve things. I do this from a lens of user research, anthropology, systems thinking and "artifact analysis" (e.g. looking at tech stacks, processes and what's already there).</span>
+						</span>
+					</summary>
+				</details>
+				<details class="process_stage">
+					<summary>
+						<span class="process_icon" aria-hidden="true">💡</span>
+						<span class="process_summary">
+							<span class="process_title">Ideation &amp; approaches</span>
+							<span class="process_description">Brainstorming and exploring solution spaces with a diverse set of perspectives and approaches is good stuff, especially when you figure out win-win situations, solutions that will improve over time, or managing to get around problems altogether.</span>
+						</span>
+					</summary>
+				</details>
+				<details class="process_stage">
+					<summary>
+						<span class="process_icon" aria-hidden="true">🧑‍🔬</span>
+						<span class="process_summary">
+							<span class="process_title">Prototyping &amp; testing</span>
+							<span class="process_description">Since we can never know if and how something will work in practice, the best way to figure it out is to just try. Sketching, prototyping, experimenting, scaffolding and testing things in real life, with real users or teams or APIs or whathaveyou, is the best way to learn what works.</span>
+						</span>
+					</summary>
+				</details>
+				<details class="process_stage">
+					<summary>
+						<span class="process_icon" aria-hidden="true">🛠️</span>
+						<span class="process_summary">
+							<span class="process_title">Implementation &amp; adoption</span>
+							<span class="process_description">Actually implementing and building things out is where I often prefer to collaborate with others in a group where we can complement each other, and focus on simplicity, understandability and usability of what is built. I love working with early adopters and the exchange of knowledge that makes things better for everyone.</span>
+						</span>
+					</summary>
+				</details>
+				<details class="process_stage">
+					<summary>
+						<span class="process_icon" aria-hidden="true">♾️</span>
+						<span class="process_summary">
+							<span class="process_title">Rinse &amp; repeat</span>
+							<span class="process_description">Things are always changing and impacting other things, so there's always new ideas to explore, new challenges that arise, new problems to be solved and new boxes to think outside of.</span>
+						</span>
+					</summary>
+				</details>
+			</div>
+		</section>
+
+		<section class="services_section section_shell" id="services" aria-labelledby="services_title">
+			<div class="section_kicker">Services</div>
+			<div class="section_heading services_heading">
+				<div><h2 id="services_title">Ways to work <em>with me.</em></h2></div>
+				<p>I'm self-employed and looking to work with interesting people and companies. If something below sounds interesting, let's talk!</p>
+			</div>
+			<div class="services_grid">
+				<article class="service_card">
+					<h3>Projects &amp; consulting</h3>
+					<p>I'm used to working on project basis, often in phases of exploration, design and early development.
+					</p>
+					<ul class="service_topics">
+						<li>Design systems and mobile UI architecture</li>
+						<li>Server-driven UI</li>
+						<li>Feature flagging and remote configuration</li>
+						<li>Standardisation and migrations</li>
+						<li>Embedded analysis (a.k.a <a href="https://docs.google.com/document/d/1OVPJl98hcF2hCK9ymXRBmsaCB1-gvlDEJXRb4lMNJE8/edit?pli=1&tab=t.0#heading=h.it2r36pxfnjr" target="_blank">Elin analysis</a>)</li>
+					</ul>
+				</article>
+				<article class="service_card">
+					<h3>Knowledge sharing</h3>
+					<p>I enjoy sharing knowledge and insights through talks and workshops, at conferences, meetups, company events or elsewhere. If there's anything in my previous experience that sounds interesting, let's talk and figure something out!
+					</p>
+					<ul class="service_topics">
+						<li>Developer experience and platform thinking</li>
+						<li>Design systems</li>
+						<li>Mobile architecture and cross-platform development</li>
+						<li>Technical leadership</li>
+						<li>The impact of technology on society</li>
+					</ul>
+				</article>
+				<article class="service_card">
+					<h3>Work 1:1 with me</h3>
+					<p>I'm not a coach, but people have enjoyed having me as an advisor, conversation partner and voice of reason around niche-ish topics I'm excited about, like:</p>
+					<ul class="service_topics">
+						<li>Navigating cross-functional roles and collaboration</li>
+						<li>Growing into informal leadership and staff/+ engineering</li>
+						<li>Thinking about work, processes, goals and systems from different viewpoints and levels of abstraction</li>
+						<li>Philosophical and practical questions about the impact of technology on society</li>
+						<li>Learning and practicing creativity, design thinking and iterative problem solving</li>
+						<li>Figuring out how to work with a weird brain and navigate burnout</li>
+					</ul>
+					<p>If that sounds interesting, let's chat and see what happens! First call is free, and we can figure out if it makes sense to continue.</p>
+				</article>
+			</div>
+			<aside class="work_style_note">
+				<p class="work_style_label">When I thrive</p>
+				<p>Because I'm drawn to points of friction and want to understand and explain problems and challenges I see around me, I thrive in environments where it's possible and encouraged to have open conversations, where questions, curiosity and new perspectives are welcomed, and where it's possible or encouraged to leave your lane.  I've been told I do this with "natural ego-less honesty", probably because I think people generally want to do the best they can and we often want the same outcomes, but might have different ideas for how to get there.</p>
+			</aside>
+			<a class="button button_light" href="mailto:elin@hejelin.com?subject=Let%27s%20work%20together">Oooh, that sounds interesting!<span aria-hidden="true">↗</span></a>
+		</section>
+
+		<section class="work_section section_shell" id="work" aria-labelledby="work_title">
+			<div class="experience_section" id="experience" aria-labelledby="experience_title">
+				<div class="section_heading">
+					<div>
+						<div class="section_kicker">Experience</div>
+						<h2 id="experience_title">A few things I've <em>done.</em></h2>
+					</div>
+					<a class="text_link" href="https://docs.google.com/document/d/1jwepskSj6LujnUvlfk-yD05KfvodA6URdmDBIOBurMg/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Full résumé <span aria-hidden="true">↗</span></a>
+				</div>
+				<div class="experience_list">
+					<article class="experience_item">
+						<div class="experience_logo"><img src="imgs/prageng.png" alt="The Pragmatic Engineer"></div>
+						<div class="experience_copy">
+							<h3>Tech Industry Researcher</h3>
+							<p class="experience_org">The Pragmatic Engineer · Remote</p>
+							<p class="experience_description">Did research, surveys and reports on the tech industry for The Pragmatic Engineer's Deep Dive newsletters, on topics like <a href="https://newsletter.pragmaticengineer.com/p/ai-impact-on-software-engineers-part-2" target="_blank">AI tooling impact</a>, <a href="https://newsletter.pragmaticengineer.com/p/cross-platform-mobile-development" target="_blank">cross-platform mobile development</a> and <a href="https://newsletter.pragmaticengineer.com/p/bug-management-that-works-part-1" target="_blank">bug management</a>.</p>
+						</div>
+						<span class="experience_date">2024-2026</span>
+					</article>
+					<article class="experience_item">
+						<div class="experience_logo"><img src="imgs/spotify.png" alt="Spotify"></div>
+						<div class="experience_copy">
+							<h3>Senior Engineer · Tech Lead</h3>
+							<p class="experience_org">Spotify · Stockholm, Sweden</p>
+							<p class="experience_description">Worked with mobile feature architecture, server-driven UI, design systems and platform engineering in various teams across the company, and with technical strategy and leadership in various groups and initiatives.</p>
+						</div>
+						<span class="experience_date">2016-2023</span>
+					</article>
+					<article class="experience_item">
+						<div class="experience_logo">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+								<g>
+									<defs>
+										<path id="SVGID_1_" d="M44.5,20H42h-8.2H24v8.5h11.8C34.7,33.9,30.1,37,24,37c-7.2,0-13-5.8-13-13s5.8-13,13-13c3.1,0,5.9,1.1,8.1,2.9l6.4-6.4C34.6,4.1,29.6,2,24,2C11.8,2,2,11.8,2,24s9.8,22,22,22c11,0,21-8,21-22C45,22.7,44.8,21.3,44.5,20z"/>
+									</defs>
+									<clipPath id="SVGID_2_">
+										<use xlink:href="#SVGID_1_" overflow="visible"/>
+									</clipPath>
+									<polygon clip-path="url(#SVGID_2_)" fill="#FBBC05" points="0,37 0,11 17,24"/>
+									<polygon clip-path="url(#SVGID_2_)" fill="#EA4335" points="0,11 17,24 24,17.9 48,14 48,0 0,0"/>
+									<polygon clip-path="url(#SVGID_2_)" fill="#34A853" points="0,37 30,14 37.9,15 48,0 48,48 0,48"/>
+									<polygon clip-path="url(#SVGID_2_)" fill="#4285F4" points="48,48 17,24 13,21 48,11"/>
+								</g>
+							</svg>
+						</div>
+						<div class="experience_copy">
+							<h3>UX Design Intern</h3>
+							<p class="experience_org">Google Cultural Institute · London, UK</p>
+							<p class="experience_description">Worked on UX prototyping for the Google Cultural Institute <a href="https://artsandculture.google.com" target="_blank">web app</a>, where the <a href="https://artsandculture.google.com/entity/0098/m03yhk?categoryId=medium" target="_blank">Entity Pages</a> are still rolling some of my css. 👀</p>
+						</div>
+						<span class="experience_date">2015</span>
+					</article>
+					<article class="experience_item">
+						<div class="experience_logo"><img src="imgs/umu.png" alt="Umeå University logo"></div>
+						<div class="experience_copy">
+							<h3>M.Sc. in Interaction Technology and Design</h3>
+							<p class="experience_org">Umeå Universitet · Umeå, Sweden</p>
+							<p class="experience_description">Studied the engineering program lovingly known as <a href="http://interaktion.nu" target="_blank">ID</a>: half computer science, half design, usability, psychology and product development through design thinking and user testing. Was also engaged in the student union and worked one semester with course work improvement.</p>
+						</div>
+						<span class="experience_date">2011-2016</span>
+					</article>
+				</div>
+			</div>
+			<div class="section_heading">
+				<div>
+					<div class="section_kicker">Random projects</div>
+					<h2 id="work_title">A few things I've <em>made.</em></h2>
+				</div>
+				<div class="project_controls">
+					<button class="shuffle_button" id="shuffle_projects" type="button" disabled>Shuffle projects <span aria-hidden="true">↻</span></button>
+				</div>
+			</div>
+			<div id="projects" class="projects_grid" aria-live="polite">
+				<div class="proj_fullscreen" role="presentation"></div>
+				<div class="placeholder_proj" aria-hidden="true"></div>
+			</div>
+		</section>
+
+		<section class="toolbox_section section_shell" id="toolbox" aria-labelledby="toolbox_title">
+			<div class="section_heading">
+				<div>
+					<div class="section_kicker">Toolbox and interests</div>
+					<h2 id="toolbox_title">What I'm <em>good at</em>, and things I can't stop <em>thinking about.</em></h2>
+				</div>
+				<p>My toolbox of skills and abilities that I enjoy putting to good use, and interests and projects I've circled back to throughout my career.</p>
+			</div>
+			<div class="toolbox_grid" aria-label="Skills and areas of expertise">
+				<article class="toolbox_item skill">
+					<h3>Software development</h3>
+					<p>Primarily android and web development, with some dabbling in data and backend. I particularly enjoy developing APIs, tooling and solving cross-cutting problems in elegant ways.</p>
+				</article>
+				<article class="toolbox_item skill">
+					<h3>Communication</h3>
+					<p>Writing, speaking, educating, building trust and report, and general communication skills.</p>
+				</article>
+				<article class="toolbox_item skill">
+					<h3>UX, prototyping &amp; user research</h3>
+					<p>My formal education is in interaction design, user research, prototyping and design thinking, which are skills that served me equally well working with large-scale app architecture, platform teams and developer experience - the users simply happen to be developers and what you're designing happens to APIs and codebases.</p>
+				</article>
+				<article class="toolbox_item skill">
+					<h3>DX, platform thinking &amp; dev advocacy</h3>
+					<p>Early adoption, alpha/beta/GA-cycles, etc.</p>
+				</article>
+				<article class="toolbox_item ability">
+					<h3>Cross-functional collaboration</h3>
+					<p>A dear colleague has referred to me as <em>comb shaped</em>, with a broad understanding and several areas of deeper expertise, which has let me work as a link and consolidator between tech, design, product, leadership, and the <em>messy middle</em> I thoroughly enjoy.</p>
+				</article>
+				<article class="toolbox_item project">
+					<h3>Design systems</h3>
+					<p>Lorem ipsum something about design systems.</p>
+				</article>
+				<article class="toolbox_item project">
+					<h3>Feature flagging &amp; A/B testing systems</h3>
+					<p>I have experience designing and implementing feature flagging and A/B testing systems to enable data-driven decision making and reduce risk in product development. Especially on mobile.</p>
+				</article>
+				<article class="toolbox_item skill">
+					<h3>User-centric product development</h3>
+					<p>I'm a firm believer that a problem is not solved unless the solution actually works in practice for the people affected, which is my approach to product development. I prefer being a hands-on partner to a dedicated product manager, but will generally wear that hat or coach others to fill the role when needed.</p>
+				</article>
+				<article class="toolbox_item project">
+					<h3>Server-driven UI</h3>
+					<p>Especially on mobile</p>
+				</article>
+				<article class="toolbox_item skill">
+					<h3>Design thinking &amp; analysis</h3>
+					<p>As I've described in <a href="about">my process</a>, something something.</p>
+				</article>
+				<article class="toolbox_item project">
+					<h3>Tech steering &amp; strategy</h3>
+					<p>While working at Spotify, I was very geeky about enabling others through standardisation, best practices, and shared tech strategy, and worked with tech steering groups and tech stategy.</p>
+				</article>
+				<article class="toolbox_item skill">
+					<h3>Technical product management</h3>
+					<p>I've been in positions of being a technical partner to product managers, or putting on my product hat when there hasn't been anyone else.</p>
+				</article>
+				<article class="toolbox_item skill">
+					<h3>Project &amp; process management</h3>
+					<p>I think good habits and practices are generally easier to replicate and amplify if there's some basic structure and process in place, but not all process is necessary. There should be <em>lagom</em> process, and that's generally what I'm good at figuring out how to put in place.</p>
+				</article>
+				<article class="toolbox_item ability">
+					<h3>Optimism &amp; resilience</h3>
+					<p>I'm predisposed to optimism, but I also believe it's a skill and a practice, one that I tend to spread around me and inbue in the teams and groups I work with. One person once said that I managed to "even make documentation sounds like a fun thing to work on", which might be the nicest compliment I've ever received (and also, documentation is SO GOOD!).</p>
+				</article>
+				<article class="toolbox_item skill">
+					<h3>Personal productivity, wellness &amp; life hacks</h3>
+					<p>I'm a firm believer that a problem is not solved unless the solution actually works in practice for the people affected, which is my approach to product development. I prefer being a hands-on partner to a dedicated product manager, but will generally wear that hat or coach others to fill the role when needed.</p>
+				</article>
+				<article class="toolbox_item ability">
+					<h3>Systems thinking</h3>
+					<p>My brain is drawn to understanding things in systems, and how things and people interact and impact eachother.</p>
+				</article>
+				<article class="toolbox_item topic">
+					<h3>Tech philosophy</h3>
+					<p>I've spent the last few years researching and philosophising about the tech industry and how it's shaping the world and society around us in positive but also very negative ways. </p>
+				</article>
+			</div>
+		</section>
+	<section class="writing_section section_shell" id="writing" aria-labelledby="writing_title">
+			<div class="section_heading">
+				<div>
+					<div class="section_kicker">Writing and speaking</div>
+					<h2 id="writing_title">A few things I've <em>shared.</em></h2>
+				</div>
+				<a class="text_link" href="https://hejelin.substack.com" target="_blank" rel="noopener noreferrer">More writing on Substack <span aria-hidden="true">↗</span></a>
+			</div>
+			<div class="examples_grid">
+				<a class="example_card" href="https://www.youtube.com/watch?v=D7Cr50Mom4M" target="_blank" rel="noopener noreferrer">
+					<img class="example_thumbnail" src="imgs/feedback.jpg" alt="" loading="lazy">
+					<span class="example_type">Talk · Droidcon London · 2022</span>
+					<h4>Tell me about it!</h4>
+					<span class="example_description">Getting better at giving, asking for and using feedback.</span>
+					<span class="example_action">Watch talk <span aria-hidden="true">↗</span></span>
+				</a>
+				<a class="example_card" href="https://newsletter.pragmaticengineer.com/p/ai-impact-on-software-engineers-part-2" target="_blank" rel="noopener noreferrer">
+					<div class="example_thumbnail example_placeholder">Thumbnail coming soon</div>
+					<span class="example_type">Research · The Pragmatic Engineer</span>
+					<h4>AI tooling's impact on software engineers</h4>
+					<span class="example_action">Read article <span aria-hidden="true">↗</span></span>
+				</a>
+				<a class="example_card" href="https://newsletter.pragmaticengineer.com/p/bug-management-that-works-part-1" target="_blank" rel="noopener noreferrer">
+					<div class="example_thumbnail example_placeholder">Thumbnail coming soon</div>
+					<span class="example_type">Research · The Pragmatic Engineer</span>
+					<h4>Bug management that works</h4>
+					<span class="example_action">Read article <span aria-hidden="true">↗</span></span>
+				</a>
+				<a class="example_card" href="https://www.youtube.com/watch?v=cTx8oHHew90" target="_blank" rel="noopener noreferrer">
+					<img class="example_thumbnail" src="imgs/leaddev.jpg" alt="" loading="lazy">
+					<span class="example_type">Talk · LeadDev Berlin · 2019</span>
+					<h4>Breaking the (developer) silos</h4>
+					<span class="example_description">What it takes to collaborate across platform teams.</span>
+					<span class="example_action">Watch talk <span aria-hidden="true">↗</span></span>
+				</a>
+				<a class="example_card" href="https://hejelin.substack.com/s/the-burnout-diaries" target="_blank" rel="noopener noreferrer">
+					<img class="example_thumbnail" src="https://substackcdn.com/image/fetch/$s_!6ev6!,w_1000,h_524,c_fill,f_webp,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9f158bc3-7528-4d57-81b9-f49fefa31940_3763x1853.jpeg" alt="" loading="lazy">
+					<span class="example_type">Writing · Substack</span>
+					<h4>The Burnout Diaries</h4>
+					<span class="example_description">Sharing my experience of ending up in and working my way out of burnout.</span>
+					<span class="example_action">Read article <span aria-hidden="true">↗</span></span>
+				</a>
+				<a class="example_card" href="https://www.youtube.com/watch?v=BPJ6PVSe0N8" target="_blank" rel="noopener noreferrer">
+					<img class="example_thumbnail" src="imgs/hubs.jpg" alt="" loading="lazy">
+					<span class="example_type">Talk · Droidcon Berlin · 2019</span>
+					<h4>The silver bullet that wasn't</h4>
+					<span class="example_description">A cautionary tale about building cross-platform systems.</span>
+					<span class="example_action">Watch talk <span aria-hidden="true">↗</span></span>
+				</a>
+				<a class="example_card" href="https://newsletter.pragmaticengineer.com/p/cross-platform-mobile-development" target="_blank" rel="noopener noreferrer">
+					<div class="example_thumbnail example_placeholder">Thumbnail coming soon</div>
+					<span class="example_type">Research · The Pragmatic Engineer</span>
+					<h4>Cross-platform mobile development</h4>
+					<span class="example_action">Read article <span aria-hidden="true">↗</span></span>
+				</a>
+				<a class="example_card" href="https://www.youtube.com/watch?v=opsiSaUS2bg" target="_blank" rel="noopener noreferrer">
+					<img class="example_thumbnail" src="imgs/modularization.jpg" alt="" loading="lazy">
+					<span class="example_type">Talk · Droidcon Berlin · 2018</span>
+					<h4>Modularization — how hard can it be?</h4>
+					<span class="example_description">Lessons from modularizing Spotify's Android codebase.</span>
+					<span class="example_action">Watch talk <span aria-hidden="true">↗</span></span>
+				</a>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site_footer">
+		<div class="footer_top">
+			<div>
+				<h2>Let's do something <em>interesting!</em></h2>
+			</div>
+			<a class="button button_light" href="mailto:elin@hejelin.com">elin@hejelin.com <span aria-hidden="true">↗</span></a>
 		</div>
-	</div>
-	<a href="https://docs.google.com/document/d/1jwepskSj6LujnUvlfk-yD05KfvodA6URdmDBIOBurMg/edit?usp=sharing" 
-		 class="button_link" target="_blank">
-		<button class="action_btn">Resumé &#8594;</button>
-	</a>
-</section>
-
-<section id="projects">
-	<div class="proj_fullscreen"></div>
-	<h1 class="section_head">Here are a few random things I've done</h1>
-	<div class="placeholder_proj"></div>
-</section>
-
-<footer>
-	<div class="icon_container">
-		<a href="http://twitter.com/hejelinnilsson" target="_blank"><img src="imgs/twitter-g.svg" alt="twitter" /></a>
-		<a href="http://github.com/hejelin" target="_blank"><img src="imgs/github-g.svg" alt="github" /></a>
-		<a href="http://linkedin.com/in/hejelin" target="_blank"><img src="imgs/linkedin-g.svg"alt="linkedin" /></a>
-		<a href="mailto:elin.nilsson30@gmail.com"><img src="imgs/mail-g.svg" alt="email" /></a>
-	</div>
-	<h3 id="bye">G'bye! 🦄</h3>
-</footer>
-
+		<div class="footer_bottom">
+			<a class="wordmark footer_wordmark" href="#top">HE</a>
+			<p id="bye"></p>
+			<div class="footer_socials" aria-label="Social links">
+				<a href="https://github.com/hejelin" target="_blank" rel="noopener noreferrer">GitHub</a>
+				<a href="https://linkedin.com/in/hejelin" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+				<a href="https://bsky.app/profile/hejelin.com" target="_blank" rel="noopener noreferrer">Bluesky</a>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>
