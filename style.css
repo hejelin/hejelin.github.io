@@ -500,8 +500,8 @@ h2 em {
 	text-overflow: ellipsis;
 	display: -webkit-box;
   	-webkit-box-orient: vertical;
-  	-webkit-line-clamp: 2;
-	line-clamp: 2;
+  	-webkit-line-clamp: 3;
+	line-clamp: 3;
 }
 
 .process_stage[open] .process_description {
@@ -935,14 +935,23 @@ h2 em {
 }
 
 .service_card p {
-	margin-bottom: 0;
 	font-size: 13px;
 	line-height: 1.7;
 }
 
+.service em {
+	font-family: var(--sans);
+	font-size: 11px;
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 12px;
+    letter-spacing: 0.15em;
+}
+
 .service_card .service_topics {
 	display: grid;
-	gap: 10px;
+	gap: 2px;
 	margin: 16px 0;
 	padding: 0;
 	list-style: none;
