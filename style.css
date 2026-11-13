@@ -399,10 +399,10 @@ h2 em {
 .section_heading > p, 
 .process_heading > p {
 	max-width: 350px;
-	margin-bottom: 5px;
+	margin-bottom: none;
 	color: var(--muted);
 	font-size: 13px;
-	line-height: 1.8;
+	line-height: 1.5;
 }
 
 .process_heading > p {
