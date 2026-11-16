@@ -225,6 +225,11 @@ h2 em {
 	font-size: 14px;
 }
 
+.disclaimer::selection {
+	background: var(--teal);
+	color: var(--white);
+}
+
 .hero_intro em {
 	font-size: 16px;
 	font-weight: bold;
@@ -718,6 +723,11 @@ h2 em {
 	padding: 19px 22px;
 	background: var(--mint);
 	opacity: 0.7;
+}
+
+.work_style_note ::selection {
+	background: var(--teal);
+	color: var(--white);
 }
 
 .work_style_note p {
