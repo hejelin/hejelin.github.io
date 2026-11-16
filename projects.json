@@ -76,8 +76,7 @@
 		"desc": "A simple and web based emulator for Google Glass that allowed the user to prototype cards on Glass.",
 		"img_url": "imgs/glassemul.png",
 		"tags": "web angular uni",
-		"project_date": "April 2014",
-		"url": "/glass/index.html"
+		"project_date": "April 2014"
 	},
 	{
 		"title": "Learn with (Google) Glass",
@@ -110,5 +109,14 @@
 		"tags": "ruby-on-rails web uni",
 		"project_date": "March 2014",
 		"url": null
+	},
+	{
+		"title": "Bouncy ELIN logo",
+		"desc": "I built a fun animating ELIN logo using only html and css which the last version of my website used. It was adorable and I wanted to keep it, so here it is!",
+		"img_url": "imgs/bouncy-logo.gif",
+		"tags": "code",
+		"project_date": "2016",
+		"url": null
+
 	}
 ]}
